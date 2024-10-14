@@ -1,0 +1,17 @@
+C:\Users\feleg\source\repos\Stocks\Stocks\bin\Debug\net8.0\Stocks.exe
+C:\Users\feleg\source\repos\Stocks\Stocks\bin\Debug\net8.0\Stocks.deps.json
+C:\Users\feleg\source\repos\Stocks\Stocks\bin\Debug\net8.0\Stocks.runtimeconfig.json
+C:\Users\feleg\source\repos\Stocks\Stocks\bin\Debug\net8.0\Stocks.dll
+C:\Users\feleg\source\repos\Stocks\Stocks\bin\Debug\net8.0\Stocks.pdb
+C:\Users\feleg\source\repos\Stocks\Stocks\bin\Debug\net8.0\CsvHelper.dll
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.csproj.AssemblyReference.cache
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.AssemblyInfoInputs.cache
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.AssemblyInfo.cs
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.csproj.CoreCompileInputs.cache
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.csproj.Up2Date
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.dll
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\refint\Stocks.dll
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.pdb
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\Stocks.genruntimeconfig.cache
+C:\Users\feleg\source\repos\Stocks\Stocks\obj\Debug\net8.0\ref\Stocks.dll
