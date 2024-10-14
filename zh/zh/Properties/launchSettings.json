@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "zh": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\valaki\\source\\repos\\zh\\zh\\csv\\fifa-players.csv"
+    }
+  }
+}
