@@ -1,0 +1,17 @@
+C:\Users\feleg\source\repos\gyak2\gyak2\bin\Debug\net8.0-windows\gyak2.exe
+C:\Users\feleg\source\repos\gyak2\gyak2\bin\Debug\net8.0-windows\gyak2.deps.json
+C:\Users\feleg\source\repos\gyak2\gyak2\bin\Debug\net8.0-windows\gyak2.runtimeconfig.json
+C:\Users\feleg\source\repos\gyak2\gyak2\bin\Debug\net8.0-windows\gyak2.dll
+C:\Users\feleg\source\repos\gyak2\gyak2\bin\Debug\net8.0-windows\gyak2.pdb
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.csproj.GenerateResource.cache
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.AssemblyInfoInputs.cache
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.AssemblyInfo.cs
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.csproj.CoreCompileInputs.cache
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.dll
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\refint\gyak2.dll
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.pdb
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.genruntimeconfig.cache
+C:\Users\feleg\source\repos\gyak2\gyak2\obj\Debug\net8.0-windows\ref\gyak2.dll
+C:\Users\feleg\source\repos\Gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.View.AddOrModifyHero.resources
+C:\Users\feleg\source\repos\Gyak2\gyak2\obj\Debug\net8.0-windows\gyak2.View.HeroesApp.resources
