@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\valaki\\Downloads\\Athletes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|c:\\users\\valaki\\downloads\\athletes\\athletes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|solutionrelative:athletes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|c:\\users\\valaki\\downloads\\athletes\\athletes\\athletes.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|solutionrelative:athletes\\athletes.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|c:\\users\\valaki\\downloads\\athletes\\athletes\\models\\athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|solutionrelative:athletes\\models\\athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|c:\\users\\valaki\\downloads\\athletes\\athletes\\mappings\\athleteeventmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|solutionrelative:athletes\\mappings\\athleteeventmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|c:\\users\\valaki\\downloads\\athletes\\athletes\\mappings\\athletemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|solutionrelative:athletes\\mappings\\athletemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|c:\\users\\valaki\\downloads\\athletes\\athletes\\models\\athleteevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91150D8F-9645-410F-A114-D40F0F028DFD}|Athletes\\Athletes.csproj|solutionrelative:athletes\\models\\athleteevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Athletes",
+              "DocumentMoniker": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Athletes.csproj",
+              "RelativeDocumentMoniker": "Athletes\\Athletes.csproj",
+              "ToolTip": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Athletes.csproj",
+              "RelativeToolTip": "Athletes\\Athletes.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-14T16:19:23.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AthleteEventMap.cs",
+              "DocumentMoniker": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Mappings\\AthleteEventMap.cs",
+              "RelativeDocumentMoniker": "Athletes\\Mappings\\AthleteEventMap.cs",
+              "ToolTip": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Mappings\\AthleteEventMap.cs",
+              "RelativeToolTip": "Athletes\\Mappings\\AthleteEventMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T16:13:19.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AthleteEvent.cs",
+              "DocumentMoniker": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Models\\AthleteEvent.cs",
+              "RelativeDocumentMoniker": "Athletes\\Models\\AthleteEvent.cs",
+              "ToolTip": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Models\\AthleteEvent.cs",
+              "RelativeToolTip": "Athletes\\Models\\AthleteEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T16:09:34.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Athlete.cs",
+              "DocumentMoniker": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Models\\Athlete.cs",
+              "RelativeDocumentMoniker": "Athletes\\Models\\Athlete.cs",
+              "ToolTip": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Models\\Athlete.cs",
+              "RelativeToolTip": "Athletes\\Models\\Athlete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:54:30.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AthleteMap.cs",
+              "DocumentMoniker": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Mappings\\AthleteMap.cs",
+              "RelativeDocumentMoniker": "Athletes\\Mappings\\AthleteMap.cs",
+              "ToolTip": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Mappings\\AthleteMap.cs",
+              "RelativeToolTip": "Athletes\\Mappings\\AthleteMap.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:54:21.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Program.cs",
+              "RelativeDocumentMoniker": "Athletes\\Program.cs",
+              "ToolTip": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\Program.cs",
+              "RelativeToolTip": "Athletes\\Program.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAQwHsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T15:52:33.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

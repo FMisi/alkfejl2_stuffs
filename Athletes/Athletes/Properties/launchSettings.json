@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Athletes": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\bin\\Debug\\net8.0\\athletes.csv\r\nC:\\Users\\valaki\\Downloads\\Athletes\\Athletes\\bin\\Debug\\net8.0\\athlete_events.csv"
+    }
+  }
+}
