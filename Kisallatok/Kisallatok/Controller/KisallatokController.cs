@@ -42,7 +42,7 @@ namespace Kisallatok.Controller
             return dao.GetKategoriak();
         }
 
-        public Kisallat GetKisallat(long id)
+        public Kisallat? GetKisallat(long id)
         {
             return dao.GetKisallat(id);
         }

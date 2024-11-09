@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\view\\addormodifykisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\view\\addormodifykisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\dao\\daoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\dao\\daoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\controller\\kisallatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\controller\\kisallatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\model\\kisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\model\\kisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\model\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\model\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\view\\addkategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\view\\addkategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|C:\\Users\\feleg\\source\\repos\\Kisallatok\\kisallatok\\view\\addkategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\view\\addkategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\view\\addormodifykisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\view\\addormodifykisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|C:\\Users\\feleg\\source\\repos\\Kisallatok\\kisallatok\\view\\addormodifykisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -31,26 +51,6 @@
       "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\model\\kisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\model\\kisallat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\model\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\model\\kategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\dao\\daoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\dao\\daoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\dao\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\controller\\kisallatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\controller\\kisallatokcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|c:\\users\\feleg\\source\\repos\\kisallatok\\kisallatok\\view\\kisallatokapp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8C22B40-22A5-4B25-84C8-72A143ECD5DC}|Kisallatok\\Kisallatok.csproj|solutionrelative:kisallatok\\view\\kisallatokapp.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -62,11 +62,126 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddOrModifyKisallat.cs",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\View\\AddOrModifyKisallat.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs",
+              "RelativeToolTip": "Kisallatok\\View\\AddOrModifyKisallat.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwFEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:37:23.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddKategoria.cs",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\View\\AddKategoria.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs",
+              "RelativeToolTip": "Kisallatok\\View\\AddKategoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:38:39.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Kisallat.cs",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kisallat.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\Model\\Kisallat.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kisallat.cs",
+              "RelativeToolTip": "Kisallatok\\Model\\Kisallat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:24:09.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Kategoria.cs",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kategoria.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\Model\\Kategoria.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kategoria.cs",
+              "RelativeToolTip": "Kisallatok\\Model\\Kategoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:24:13.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DaoImpl.cs",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\DaoImpl.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\DAO\\DaoImpl.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\DaoImpl.cs",
+              "RelativeToolTip": "Kisallatok\\DAO\\DaoImpl.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwC4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:24:14.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KisallatokController.cs",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Controller\\KisallatokController.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\Controller\\KisallatokController.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Controller\\KisallatokController.cs",
+              "RelativeToolTip": "Kisallatok\\Controller\\KisallatokController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA1wCwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:24:20.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dao.cs",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\Dao.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\DAO\\Dao.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\Dao.cs",
+              "RelativeToolTip": "Kisallatok\\DAO\\Dao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:24:17.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddKategoria.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\View\\AddKategoria.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs [Design]",
+              "RelativeToolTip": "Kisallatok\\View\\AddKategoria.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:36:38.864Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddOrModifyKisallat.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs",
+              "RelativeDocumentMoniker": "Kisallatok\\View\\AddOrModifyKisallat.cs",
+              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs [Design]",
+              "RelativeToolTip": "Kisallatok\\View\\AddOrModifyKisallat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T12:36:24.655Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "KisallatokApp.cs",
               "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\KisallatokApp.cs",
               "RelativeDocumentMoniker": "Kisallatok\\View\\KisallatokApp.cs",
@@ -79,69 +194,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddOrModifyKisallat.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\View\\AddOrModifyKisallat.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs [Design]",
-              "RelativeToolTip": "Kisallatok\\View\\AddOrModifyKisallat.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:36:24.655Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddKategoria.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\View\\AddKategoria.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs [Design]",
-              "RelativeToolTip": "Kisallatok\\View\\AddKategoria.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:36:38.864Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddOrModifyKisallat.cs",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\View\\AddOrModifyKisallat.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddOrModifyKisallat.cs",
-              "RelativeToolTip": "Kisallatok\\View\\AddOrModifyKisallat.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAtwHEAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:37:23.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddKategoria.cs",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\View\\AddKategoria.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\AddKategoria.cs",
-              "RelativeToolTip": "Kisallatok\\View\\AddKategoria.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAtwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:38:39.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "KisallatokApp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\KisallatokApp.cs",
               "RelativeDocumentMoniker": "Kisallatok\\View\\KisallatokApp.cs",
               "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\View\\KisallatokApp.cs [Design]",
               "RelativeToolTip": "Kisallatok\\View\\KisallatokApp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:34:24.881Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-09T12:34:24.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Program.cs",
               "RelativeDocumentMoniker": "Kisallatok\\Program.cs",
@@ -149,73 +213,7 @@
               "RelativeToolTip": "Kisallatok\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:24:00.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Kisallat.cs",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kisallat.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\Model\\Kisallat.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kisallat.cs",
-              "RelativeToolTip": "Kisallatok\\Model\\Kisallat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:24:09.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Kategoria.cs",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kategoria.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\Model\\Kategoria.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Model\\Kategoria.cs",
-              "RelativeToolTip": "Kisallatok\\Model\\Kategoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:24:13.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DaoImpl.cs",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\DaoImpl.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\DAO\\DaoImpl.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\DaoImpl.cs",
-              "RelativeToolTip": "Kisallatok\\DAO\\DaoImpl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:24:14.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Dao.cs",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\Dao.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\DAO\\Dao.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\DAO\\Dao.cs",
-              "RelativeToolTip": "Kisallatok\\DAO\\Dao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:24:17.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "KisallatokController.cs",
-              "DocumentMoniker": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Controller\\KisallatokController.cs",
-              "RelativeDocumentMoniker": "Kisallatok\\Controller\\KisallatokController.cs",
-              "ToolTip": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Controller\\KisallatokController.cs",
-              "RelativeToolTip": "Kisallatok\\Controller\\KisallatokController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:24:20.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T12:24:00.396Z"
             },
             {
               "$type": "Document",
@@ -227,8 +225,7 @@
               "RelativeToolTip": "Kisallatok\\View\\KisallatokApp.Designer.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAIAwwFUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T12:24:27.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T12:24:27.464Z"
             }
           ]
         }

@@ -6,7 +6,7 @@
     public class Kategoria
     {
         #region public properties
-        public string Nev { get; set; }
+        public string? Nev { get; set; }
         #endregion
     }
 }

@@ -36,9 +36,15 @@ namespace Kisallatok.DAO
             return kategoriak;
         }
 
-        public Kisallat GetKisallat(long kisallatID)
+        public Kisallat? GetKisallat(long kisallatID)
         {
-            return kisallatok.FirstOrDefault(x => x.ID == kisallatID);
+            Kisallat? kisallat = kisallatok.FirstOrDefault(x => x.ID == kisallatID);
+            if (kisallat == null)
+            {
+                MessageBox.Show($"Kisallat az {kisallatID} ID-val nem talalhato.");
+                return null;
+            }
+            return kisallat;
         }
 
         public IEnumerable<Kisallat> GetKisallatok()
@@ -53,7 +59,16 @@ namespace Kisallatok.DAO
 
         public bool ModifyKisallat(Kisallat kisallat)
         {
-            int storedIndex = kisallatok.IndexOf(kisallatok.FirstOrDefault(x => x.ID == kisallat.ID));
+            Kisallat? akisallat = kisallatok.FirstOrDefault(x => x.ID == kisallat.ID);
+
+            if (akisallat == null)
+            {
+                MessageBox.Show("Az akisallatt erteke null.");
+                return false;
+            }
+
+            int storedIndex = kisallatok.IndexOf(akisallat);
+            
 
             if (storedIndex == -1) { return false; }
 

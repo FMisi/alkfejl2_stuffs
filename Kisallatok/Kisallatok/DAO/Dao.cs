@@ -11,7 +11,7 @@ namespace Kisallatok.DAO
         bool ModifyKisallat(Kisallat kisallat);
         IEnumerable<Kisallat> GetKisallatok();
         IEnumerable<Kategoria> GetKategoriak();
-        Kisallat GetKisallat(long kisallatID);
+        Kisallat? GetKisallat(long kisallatID);
         int KisallatokCount();
         bool ExportaljadAzonnal();
         #endregion

@@ -7,11 +7,12 @@ namespace Kisallatok.View
     public partial class AddOrModifyKisallat : Form
     {
         private KisallatokController controller;
-        private Kisallat kisallat;
+        private Kisallat? kisallat;
 
         public AddOrModifyKisallat(KisallatokController controller)
         {
             this.controller = controller;
+            this.kisallat = new Kisallat();
             InitializeComponent();
             LoadKategoriak();
         }
@@ -19,12 +20,20 @@ namespace Kisallatok.View
         private void LoadKisallatData()
         {
             // Töltsük ki az űrlapot a meglévő kisállat adataival
-            nevTextBox.Text = kisallat.Nev;
-            nostenyRadioButton.Checked = kisallat.Nem == "him";
-            himRadioButton.Checked = kisallat.Nem == "nosteny";
-            eletkorNumericUpDown.Value = kisallat.Eletkor;
-            sulyNumericUpDown.Value = kisallat.Suly;
-            kategoriaComboBox.SelectedItem = kisallat.Kategoria;
+            if (kisallat != null)
+            {
+                nevTextBox.Text = kisallat.Nev;
+                nostenyRadioButton.Checked = kisallat.Nem == "him";
+                himRadioButton.Checked = kisallat.Nem == "nosteny";
+                eletkorNumericUpDown.Value = kisallat.Eletkor;
+                sulyNumericUpDown.Value = kisallat.Suly;
+                kategoriaComboBox.SelectedItem = kisallat.Kategoria;
+            }
+            else
+            {
+                MessageBox.Show("A kisallatt erteke null.");
+                return;
+            }
         }
 
         private void LoadKategoriak()
@@ -68,7 +77,7 @@ namespace Kisallatok.View
                 return;
             }
 
-            Kategoria kategoria = (Kategoria)kategoriaComboBox.SelectedItem;
+            Kategoria? kategoria = kategoriaComboBox.SelectedItem as Kategoria;
             if (kategoria == null)
             {
                 MessageBox.Show("Kategoriat kotelezo megadni");
