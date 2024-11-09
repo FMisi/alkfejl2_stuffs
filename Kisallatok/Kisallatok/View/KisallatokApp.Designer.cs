@@ -55,7 +55,7 @@
             hozzaadasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { kisallatAdd, kategoriaToolStripMenuItem });
             hozzaadasToolStripMenuItem.Name = "hozzaadasToolStripMenuItem";
             hozzaadasToolStripMenuItem.Size = new Size(96, 24);
-            hozzaadasToolStripMenuItem.Text = "Hozzaadas";
+            hozzaadasToolStripMenuItem.Text = "&Hozzaadas";
             // 
             // kisallatAdd
             // 
@@ -76,7 +76,7 @@
             listazasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { listKisallat });
             listazasToolStripMenuItem.Name = "listazasToolStripMenuItem";
             listazasToolStripMenuItem.Size = new Size(74, 24);
-            listazasToolStripMenuItem.Text = "Listazas";
+            listazasToolStripMenuItem.Text = "&Listazas";
             // 
             // listKisallat
             // 
@@ -89,7 +89,8 @@
             // 
             exportalasToolStripMenuItem.Name = "exportalasToolStripMenuItem";
             exportalasToolStripMenuItem.Size = new Size(92, 24);
-            exportalasToolStripMenuItem.Text = "Exportalas";
+            exportalasToolStripMenuItem.Text = "&Exportalas";
+            exportalasToolStripMenuItem.Click += exportaljadAzonnal_Click;
             // 
             // dataGridView
             // 
@@ -112,6 +113,7 @@
             Name = "KisallatokApp";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kisallat Nyilvantarto Rendszer";
+            Load += KisallatokApp_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();

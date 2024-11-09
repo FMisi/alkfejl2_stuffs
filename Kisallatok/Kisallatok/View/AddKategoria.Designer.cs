@@ -39,7 +39,7 @@
             nevTextBox.Location = new Point(203, 49);
             nevTextBox.Name = "nevTextBox";
             nevTextBox.Size = new Size(245, 27);
-            nevTextBox.TabIndex = 9;
+            nevTextBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -52,30 +52,33 @@
             // 
             // megseButton
             // 
+            megseButton.BackColor = SystemColors.ControlLight;
             megseButton.DialogResult = DialogResult.Cancel;
             megseButton.Location = new Point(354, 200);
             megseButton.Name = "megseButton";
-            megseButton.Size = new Size(94, 29);
-            megseButton.TabIndex = 11;
+            megseButton.Size = new Size(94, 35);
+            megseButton.TabIndex = 3;
             megseButton.Text = "Megse";
-            megseButton.UseVisualStyleBackColor = true;
+            megseButton.UseVisualStyleBackColor = false;
             megseButton.Click += megseButton_Click;
             // 
             // hozzaadasButton
             // 
+            hozzaadasButton.BackColor = SystemColors.ControlLight;
             hozzaadasButton.DialogResult = DialogResult.OK;
             hozzaadasButton.Location = new Point(66, 200);
             hozzaadasButton.Name = "hozzaadasButton";
-            hozzaadasButton.Size = new Size(94, 29);
-            hozzaadasButton.TabIndex = 10;
+            hozzaadasButton.Size = new Size(94, 35);
+            hozzaadasButton.TabIndex = 2;
             hozzaadasButton.Text = "Hozzaadas";
-            hozzaadasButton.UseVisualStyleBackColor = true;
+            hozzaadasButton.UseVisualStyleBackColor = false;
             hozzaadasButton.Click += hozzaadasButton_Click;
             // 
             // AddKategoria
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(502, 313);
             Controls.Add(megseButton);
             Controls.Add(hozzaadasButton);
@@ -84,6 +87,7 @@
             Name = "AddKategoria";
             StartPosition = FormStartPosition.CenterParent;
             Text = "AddKategoria";
+            Load += AddKategoria_Load;
             ResumeLayout(false);
             PerformLayout();
         }

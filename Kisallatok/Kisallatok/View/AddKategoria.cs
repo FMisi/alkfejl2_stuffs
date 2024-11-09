@@ -14,7 +14,7 @@ namespace Kisallatok.View
             // valamiComboBox.SelectedIndex = 0;
         }
 
-        
+
 
         private void hozzaadasButton_Click(object sender, EventArgs e)
         {
@@ -41,6 +41,11 @@ namespace Kisallatok.View
         private void megseButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddKategoria_Load(object sender, EventArgs e)
+        {
+            this.Icon = new Icon("Resources/myIcon.ico");
         }
     }
 }

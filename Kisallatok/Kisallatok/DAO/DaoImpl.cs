@@ -1,9 +1,5 @@
 ﻿using Kisallatok.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Kisallatok.DAO
 {
@@ -63,6 +59,46 @@ namespace Kisallatok.DAO
 
             kisallatok[storedIndex] = kisallat;
 
+            return true;
+        }
+
+        public bool ExportaljadAzonnal()
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
+                saveFileDialog.Title = "Mentes .txt fajlba";
+                saveFileDialog.DefaultExt = "txt";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog.FileName;
+
+                    try
+                    {
+                        // A kisallatok adatainak kiirasa a kivalasztott fajlba
+                        using (StreamWriter writer = new StreamWriter(filePath, false, Encoding.UTF8))
+                        {
+                            foreach (Kisallat kisallat in kisallatok)
+                            {
+                                writer.WriteLine($"ID: {kisallat.ID}");
+                                writer.WriteLine($"Nev: {kisallat.Nev}");
+                                writer.WriteLine($"Nem: {kisallat.Nem}");
+                                writer.WriteLine($"Eletkor: {kisallat.Eletkor}");
+                                writer.WriteLine($"Suly: {kisallat.Suly}");
+                                writer.WriteLine($"Kategoria: {kisallat.Kategoria}");
+                                writer.WriteLine(new string('-', 30)); // Elvalaszto vonal
+                            }
+                        }
+
+                        MessageBox.Show("A kisállatok sikeresen mentve lettek!", "Mentés", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Hiba történt a mentés során: {ex.Message}", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
             return true;
         }
     }

@@ -56,7 +56,9 @@ namespace Kisallatok.Controller
         {
             return dao.KisallatokCount();
         }
-
-
+        public bool ExportaljadAzonnal()
+        {
+            return dao.ExportaljadAzonnal();
+        }
     }
 }

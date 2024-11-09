@@ -49,24 +49,26 @@
             // 
             // hozzaadasButton
             // 
+            hozzaadasButton.BackColor = SystemColors.ControlLight;
             hozzaadasButton.DialogResult = DialogResult.OK;
             hozzaadasButton.Location = new Point(79, 331);
             hozzaadasButton.Name = "hozzaadasButton";
-            hozzaadasButton.Size = new Size(94, 29);
-            hozzaadasButton.TabIndex = 0;
+            hozzaadasButton.Size = new Size(94, 35);
+            hozzaadasButton.TabIndex = 7;
             hozzaadasButton.Text = "Hozzaadas";
-            hozzaadasButton.UseVisualStyleBackColor = true;
+            hozzaadasButton.UseVisualStyleBackColor = false;
             hozzaadasButton.Click += addButton_Click;
             // 
             // megseButton
             // 
+            megseButton.BackColor = SystemColors.ControlLight;
             megseButton.DialogResult = DialogResult.Cancel;
             megseButton.Location = new Point(320, 331);
             megseButton.Name = "megseButton";
-            megseButton.Size = new Size(94, 29);
-            megseButton.TabIndex = 1;
+            megseButton.Size = new Size(94, 35);
+            megseButton.TabIndex = 8;
             megseButton.Text = "Megse";
-            megseButton.UseVisualStyleBackColor = true;
+            megseButton.UseVisualStyleBackColor = false;
             megseButton.Click += megseButton_Click;
             // 
             // label1
@@ -119,7 +121,7 @@
             nevTextBox.Location = new Point(169, 42);
             nevTextBox.Name = "nevTextBox";
             nevTextBox.Size = new Size(245, 27);
-            nevTextBox.TabIndex = 7;
+            nevTextBox.TabIndex = 1;
             // 
             // nostenyRadioButton
             // 
@@ -127,7 +129,7 @@
             nostenyRadioButton.Location = new Point(16, 22);
             nostenyRadioButton.Name = "nostenyRadioButton";
             nostenyRadioButton.Size = new Size(81, 24);
-            nostenyRadioButton.TabIndex = 8;
+            nostenyRadioButton.TabIndex = 2;
             nostenyRadioButton.TabStop = true;
             nostenyRadioButton.Text = "nosteny";
             nostenyRadioButton.UseVisualStyleBackColor = true;
@@ -138,7 +140,7 @@
             himRadioButton.Location = new Point(151, 20);
             himRadioButton.Name = "himRadioButton";
             himRadioButton.Size = new Size(55, 24);
-            himRadioButton.TabIndex = 9;
+            himRadioButton.TabIndex = 3;
             himRadioButton.TabStop = true;
             himRadioButton.Text = "him";
             himRadioButton.UseVisualStyleBackColor = true;
@@ -148,15 +150,16 @@
             eletkorNumericUpDown.Location = new Point(169, 149);
             eletkorNumericUpDown.Name = "eletkorNumericUpDown";
             eletkorNumericUpDown.Size = new Size(143, 27);
-            eletkorNumericUpDown.TabIndex = 10;
+            eletkorNumericUpDown.TabIndex = 4;
             // 
             // sulyNumericUpDown
             // 
+            sulyNumericUpDown.DecimalPlaces = 1;
             sulyNumericUpDown.Increment = new decimal(new int[] { 1, 0, 0, 65536 });
             sulyNumericUpDown.Location = new Point(169, 201);
             sulyNumericUpDown.Name = "sulyNumericUpDown";
             sulyNumericUpDown.Size = new Size(143, 27);
-            sulyNumericUpDown.TabIndex = 11;
+            sulyNumericUpDown.TabIndex = 5;
             // 
             // kategoriaComboBox
             // 
@@ -164,7 +167,7 @@
             kategoriaComboBox.Location = new Point(169, 252);
             kategoriaComboBox.Name = "kategoriaComboBox";
             kategoriaComboBox.Size = new Size(245, 28);
-            kategoriaComboBox.TabIndex = 12;
+            kategoriaComboBox.TabIndex = 6;
             // 
             // groupBox
             // 
@@ -173,13 +176,14 @@
             groupBox.Location = new Point(169, 75);
             groupBox.Name = "groupBox";
             groupBox.Size = new Size(245, 68);
-            groupBox.TabIndex = 13;
+            groupBox.TabIndex = 2;
             groupBox.TabStop = false;
             // 
             // AddOrModifyKisallat
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(482, 433);
             Controls.Add(groupBox);
             Controls.Add(kategoriaComboBox);
@@ -196,6 +200,7 @@
             Name = "AddOrModifyKisallat";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Kisallat Hozzaadasa vagy Modositasa";
+            Load += AddOrModifyKisallat_Load;
             ((System.ComponentModel.ISupportInitialize)eletkorNumericUpDown).EndInit();
             ((System.ComponentModel.ISupportInitialize)sulyNumericUpDown).EndInit();
             groupBox.ResumeLayout(false);

@@ -1,8 +1,6 @@
 ﻿using Kisallatok.Controller;
 using Kisallatok.Model;
 using IdGen;
-using System.Linq;
-using System.Drawing;
 
 namespace Kisallatok.View
 {
@@ -16,12 +14,6 @@ namespace Kisallatok.View
             this.controller = controller;
             InitializeComponent();
             LoadKategoriak();
-            /*
-            this.kisallat = kisallat ?? new Kisallat();
-            if (kisallat != null)
-            {
-                LoadKisallatData();
-            }*/
         }
 
         private void LoadKisallatData()
@@ -43,12 +35,15 @@ namespace Kisallatok.View
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            IdGenerator generator = new IdGenerator(0);
-            long id = generator.CreateId();
-
             string nev = nevTextBox.Text;
 
             string nem = "";
+
+            if (nev == String.Empty)
+            {
+                MessageBox.Show("Nevet kotelezo megadni");
+                return;
+            }
 
             // a == true azert van ott, mert igy konnyebben tudom olvasni
             if (nostenyRadioButton.Checked == true)
@@ -61,21 +56,29 @@ namespace Kisallatok.View
             }
             else
             {
-                MessageBox.Show("Nemet kötelező megadni");
+                MessageBox.Show("Nemet kotelezo megadni");
+                return;
+            }
+
+
+            decimal suly = (decimal)sulyNumericUpDown.Value;
+            if (suly.Equals((decimal)0.0))
+            {
+                MessageBox.Show("Sulyt kotelezo megadni");
+                return;
+            }
+
+            Kategoria kategoria = (Kategoria)kategoriaComboBox.SelectedItem;
+            if (kategoria == null)
+            {
+                MessageBox.Show("Kategoriat kotelezo megadni");
                 return;
             }
 
             int eletkor = (int)eletkorNumericUpDown.Value;
 
-            decimal suly = (decimal)sulyNumericUpDown.Value;
-
-            Kategoria kategoria = (Kategoria)kategoriaComboBox.SelectedItem;
-
-            if (nev == String.Empty)
-            {
-                MessageBox.Show("Nevet kötelező megandi");
-                return;
-            }
+            IdGenerator generator = new IdGenerator(0);
+            long id = generator.CreateId();
 
             Kisallat kisallat = new Kisallat()
             {
@@ -95,15 +98,20 @@ namespace Kisallatok.View
             }
             else
             {
-                MessageBox.Show("Nem sikerült elmenteni");
+                MessageBox.Show("Nem sikerult elmenteni");
                 DialogResult = DialogResult.Abort;
             }
-            
+
         }
 
         private void megseButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddOrModifyKisallat_Load(object sender, EventArgs e)
+        {
+            this.Icon = new Icon("Resources/myIcon.ico");
         }
     }
 }

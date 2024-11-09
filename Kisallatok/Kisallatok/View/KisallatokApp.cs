@@ -26,9 +26,19 @@ namespace Kisallatok.View
 
         private void listKisallat_Click(object sender, EventArgs e)
         {
-            dataGridView.DataSource = null;  // Frissítjük az adatforrást
+            dataGridView.DataSource = null;  // Frissitjuk az adatforrast
             dataGridView.DataSource = controller.GetKisallatok();
             dataGridView.Visible = true;
+        }
+
+        private void exportaljadAzonnal_Click(object sender, EventArgs e)
+        {
+            controller.ExportaljadAzonnal();
+        }
+
+        private void KisallatokApp_Load(object sender, EventArgs e)
+        {
+            this.Icon = new Icon("Resources/myIcon.ico");
         }
     }
 }

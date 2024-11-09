@@ -1,9 +1,4 @@
 ﻿using Kisallatok.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kisallatok.DAO
 {
@@ -18,6 +13,7 @@ namespace Kisallatok.DAO
         IEnumerable<Kategoria> GetKategoriak();
         Kisallat GetKisallat(long kisallatID);
         int KisallatokCount();
+        bool ExportaljadAzonnal();
         #endregion
     }
 }
