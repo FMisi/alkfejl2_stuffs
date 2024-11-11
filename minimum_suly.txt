@@ -1,0 +1,93 @@
+Ha szűrni szeretnél a minimum súly alapján is, akkor a SQLite lekérdezésedet úgy kell módosítani, hogy figyelembe vegye a megadott minimum súlyt is.
+
+A következő lépésekben bemutatom, hogyan adhatod hozzá a minimum súly szűrési feltételt.
+1. Controller módosítása (új szűrési logika)
+
+Először is, szükség van arra, hogy a szűrési logikába beépítsük a súly alapú keresést is. Az SQL lekérdezésünknek tartalmaznia kell egy MIN súlyt, amit a felhasználó megad.
+
+public List<Kisallat> FilterKisallatokByNevKategoriaEsSuly(string nev, string kategoriaNev, double minSuly)
+{
+    using SQLiteConnection connection = new SQLiteConnection(CONN_STRING);
+    connection.Open();
+
+    // SQL lekérdezés, amely figyelembe veszi a nev, kategoria es minSuly szurofelteteleket
+    string query = @"SELECT * FROM Kisallatok 
+                     WHERE Nev LIKE @Nev 
+                     AND Kategoria LIKE @Kategoria 
+                     AND Suly >= @MinSuly";
+
+    using SQLiteCommand command = new SQLiteCommand(query, connection);
+    command.Parameters.AddWithValue("@Nev", "%" + nev + "%");
+    command.Parameters.AddWithValue("@Kategoria", "%" + kategoriaNev + "%");
+    command.Parameters.AddWithValue("@MinSuly", minSuly); // Minimum súly feltétel
+
+    List<Kisallat> kisallatok = new List<Kisallat>();
+    using (SQLiteDataReader reader = command.ExecuteReader())
+    {
+        while (reader.Read())
+        {
+            Kisallat kisallat = new Kisallat
+            {
+                ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                Nev = reader.GetString(reader.GetOrdinal("Nev")),
+                Kategoria = reader.GetString(reader.GetOrdinal("Kategoria")),
+                Suly = reader.GetDouble(reader.GetOrdinal("Suly")),
+                // További mezők, ha szükséges
+            };
+            kisallatok.Add(kisallat);
+        }
+    }
+    return kisallatok;
+}
+
+2. Szűrés gomb eseménykezelése
+
+Ezután a szűrés gomb eseménykezelőjében kérhetjük be a minimum súlyt a felhasználótól, és azt is figyelembe vesszük a lekérdezésben.
+
+private void szuresButton_Click(object sender, EventArgs e)
+{
+    string kisallatNev = nevTextBox.Text;
+    string kategoriaNev = kategoriaTextBox.Text;
+
+    double minSuly = 0;
+    bool isValidSuly = double.TryParse(minSulyTextBox.Text, out minSuly);
+
+    if (!string.IsNullOrWhiteSpace(kisallatNev) || !string.IsNullOrWhiteSpace(kategoriaNev) || isValidSuly)
+    {
+        // A szűrési eredmények listája
+        List<Kisallat> eredmenyek = controller.FilterKisallatokByNevKategoriaEsSuly(kisallatNev, kategoriaNev, minSuly);
+
+        if (eredmenyek.Count > 0)
+        {
+            // Az eredményeket betöltjük a DataGridView-be
+            kisallatokDataGridView.DataSource = eredmenyek;
+        }
+        else
+        {
+            MessageBox.Show("Nincs talalat a megadott feltetelekkel.", "Nincs talalat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+    }
+    else
+    {
+        MessageBox.Show("Kerlek add meg a keresett kisallat nevet, kategoriat vagy minimum sulyt!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+    }
+}
+
+3. Szűrési feltételek
+
+Most három szűrési paraméterünk lesz:
+
+    Név: A kisállat neve.
+    Kategória: A kisállat kategóriája.
+    Minimum súly: A kisállat minimális súlya.
+
+A felhasználó beadhatja ezeket a feltételeket, és a rendszer ezeknek megfelelően végzi el a szűrést. Ha egy paraméter üres (pl. nem ad meg nevet vagy kategóriát), akkor a rendszer csak a megadott paraméter(ek) alapján végzi el a szűrést.
+4. A DataGridView frissítése
+
+A DataGridView-t a szűrés eredményeivel frissítjük, hasonlóan ahhoz, ahogyan a korábbiakban is tettük. Ha nincsenek találatok, akkor a felhasználót figyelmeztetjük, hogy nem található a megadott szűrési feltételeknek megfelelő kisállat.
+Összegzés:
+
+    A szűrés a súly alapján egy új feltétel a lekérdezésben.
+    Az SQL lekérdezés az összes paramétert figyelembe veszi: nevet, kategóriát és súlyt.
+    A szűrési eredményeket a DataGridView jeleníti meg.
+    Ha a felhasználó nem ad meg minden paramétert, akkor a lekérdezés az adott paraméterekre fog szűrni.
