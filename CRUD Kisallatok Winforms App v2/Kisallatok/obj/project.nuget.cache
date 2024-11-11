@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vDR8ncQAnZo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\feleg\\source\\repos\\Kisallatok\\Kisallatok\\Kisallatok.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\feleg\\.nuget\\packages\\idgen\\3.0.7\\idgen.3.0.7.nupkg.sha512",
+    "C:\\Users\\feleg\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\feleg\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+  ],
+  "logs": []
+}

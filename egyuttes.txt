@@ -1,0 +1,88 @@
+Ha együttes (kombinált) szűrési eredményt szeretnél, tehát mind a név, mind a kategória alapján szeretnél szűrni, akkor az SQL lekérdezést úgy kell módosítani, hogy mindkét feltételt figyelembe vegye. Emellett a kódban mindkét szűrési mezőt használni kell, és azok eredményét egyesíteni kell.
+1. Szűrés név és kategória alapján
+
+A szűréshez egy SQL lekérdezést kell készíteni, amely mindkét feltételt figyelembe veszi. Az alábbi példa bemutatja, hogyan lehet kombinálni a két szűrési feltételt.
+2. Controller módosítása:
+
+A FilterKisallatokByNevEsKategoria metódust fogjuk használni, amely egyszerre szűr a Nev és Kategoria mezők alapján.
+
+public List<Kisallat> FilterKisallatokByNevEsKategoria(string nev, string kategoriaNev)
+{
+    using SQLiteConnection connection = new SQLiteConnection(CONN_STRING);
+    connection.Open();
+
+    // SQL lekérdezés, amely mindkét szűrési feltételt alkalmazza
+    string query = @"SELECT * FROM Kisallatok 
+                     WHERE Nev LIKE @Nev AND Kategoria LIKE @Kategoria";
+    
+    using SQLiteCommand command = new SQLiteCommand(query, connection);
+    command.Parameters.AddWithValue("@Nev", "%" + nev + "%");
+    command.Parameters.AddWithValue("@Kategoria", "%" + kategoriaNev + "%");
+
+    List<Kisallat> kisallatok = new List<Kisallat>();
+    using (SQLiteDataReader reader = command.ExecuteReader())
+    {
+        while (reader.Read())
+        {
+            Kisallat kisallat = new Kisallat
+            {
+                ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                Nev = reader.GetString(reader.GetOrdinal("Nev")),
+                Kategoria = reader.GetString(reader.GetOrdinal("Kategoria")),
+                // További mezők, ha szükséges
+            };
+            kisallatok.Add(kisallat);
+        }
+    }
+    return kisallatok;
+}
+
+3. A gomb eseménykezelő (szűrés)
+
+A szűrési események kezelésekor a felhasználó megadhatja a keresett nevet és kategóriát is, és a kód mindkettőt figyelembe veszi.
+
+private void szuresButton_Click(object sender, EventArgs e)
+{
+    string kisallatNev = nevTextBox.Text;
+    string kategoriaNev = kategoriaTextBox.Text;
+
+    if (!string.IsNullOrWhiteSpace(kisallatNev) || !string.IsNullOrWhiteSpace(kategoriaNev))
+    {
+        // A szűrési eredmények listája
+        List<Kisallat> eredmenyek = controller.FilterKisallatokByNevEsKategoria(kisallatNev, kategoriaNev);
+
+        if (eredmenyek.Count > 0)
+        {
+            // Az eredményeket betöltjük a DataGridView-be
+            kisallatokDataGridView.DataSource = eredmenyek;
+        }
+        else
+        {
+            MessageBox.Show("Nincs talalat a megadott feltetelekkel.", "Nincs talalat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+    }
+    else
+    {
+        MessageBox.Show("Kerlek add meg a keresett kisallat nevet vagy kategoriat!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+    }
+}
+
+4. A DataGridView frissítése
+
+A fenti kódban a DataGridView-t frissítjük a kombinált szűrés eredményével. Ha nem találunk találatokat, akkor figyelmeztetjük a felhasználót, hogy nincs olyan kisállat, amely megfelelne a megadott név és kategória feltételeknek.
+5. Hogyan működik?
+
+    Mindkét szűrési mező: A felhasználó egyszerre megadhatja a kisállat nevét és kategóriáját.
+    Részleges keresés: Az SQL LIKE operátora segítségével részleges keresést hajtunk végre mindkét mezőben (a % karakterek lehetővé teszik a részleges egyezést).
+    Eredmény: Az SQL lekérdezés mindkét feltételnek megfelelő rekordokat hoz vissza. Ha mindkét mező üres, akkor is működik, de akkor csak a másik mezőre lesz szűrés.
+
+6. Részletes magyarázat:
+
+    SQL lekérdezés: A lekérdezésben az AND operátorral kombináljuk a két feltételt (Nev és Kategoria).
+        A LIKE @Nev és a LIKE @Kategoria részletezi, hogy a szűrés a Nev és Kategoria mezőkben is részleges egyezést hajt végre.
+    Felhasználói interakció: Ha a felhasználó beírja a keresett nevet vagy kategóriát, a rendszer szűri az eredményeket mindkét szempont szerint.
+    DataGridView: A találatok megjelennek a DataGridView-ben, amely automatikusan frissül a szűrési eredményekkel.
+
+7. Szűrési logika rugalmas módja:
+
+Ha a felhasználó nem ad meg mindkét mezőt, akkor a szűrés csak a kitöltött mezőn alapul. Ha egyik mezőt sem ad meg, akkor az eredményeket teljesen szűrés nélkül jeleníti meg.

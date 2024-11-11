@@ -1,0 +1,170 @@
+Ahhoz, hogy lehetőséged legyen név alapján szűrni, és a szűrés eredménye megjelenjen, egy olyan logikát kell hozzáadni, amely lehetővé teszi a felhasználónak, hogy a név alapján keresgéljen, és a találatokat megjelenítse például egy DataGridView-ben.
+
+Ez a következő lépésekből áll:
+
+    A szűrni kívánt név beírása után a program keresni fog az adatbázisban.
+    Az eredményt egy táblázatban (pl. DataGridView) jelenítjük meg.
+    A szűrés után a DataGridView frissül, és csak azok az elemek látszanak, amelyek megfelelnek a keresési feltételnek.
+
+Kód példa névre történő szűréshez és az eredmény megjelenítéséhez:
+
+1. A szűrés metódus a controller osztályban:
+
+Először készítek egy metódust a controller osztályban, amely lehetővé teszi a név szerinti szűrést és az eredményeket visszaadja. Például egy lista vagy egy DataTable formájában.
+
+public List<Kisallat> FilterKisallatokByNev(string nev)
+{
+    using SQLiteConnection connection = new SQLiteConnection(CONN_STRING);
+    connection.Open();
+
+    string query = @"SELECT * FROM Kisallatok WHERE Nev LIKE @Nev";
+    using SQLiteCommand command = new SQLiteCommand(query, connection);
+    command.Parameters.AddWithValue("@Nev", "%" + nev + "%"); // Szures reszleges nev alapjan
+
+    List<Kisallat> kisallatok = new List<Kisallat>();
+    using (SQLiteDataReader reader = command.ExecuteReader())
+    {
+        while (reader.Read())
+        {
+            Kisallat kisallat = new Kisallat
+            {
+                ID = reader.GetInt64(reader.GetOrdinal("ID")),
+                Nev = reader.GetString(reader.GetOrdinal("Nev")),
+                // Egyeb mezok...
+            };
+            kisallatok.Add(kisallat);
+        }
+    }
+    return kisallatok;
+}
+
+2. Az esemény kezelő a torlesButton_Click-ben a szűréshez:
+
+Most a felhasználó beírhat egy nevet a nevTextBox-ba, és a keresés után a találatokat megjeleníthetjük egy DataGridView-ben.
+
+private void szuresButton_Click(object sender, EventArgs e)
+{
+    string kisallatNev = nevTextBox.Text;
+
+    if (!string.IsNullOrWhiteSpace(kisallatNev))
+    {
+        // A szűrési eredmények listája
+        List<Kisallat> eredmenyek = controller.FilterKisallatokByNev(kisallatNev);
+
+        if (eredmenyek.Count > 0)
+        {
+            // Az eredményeket betöltjük a DataGridView-be
+            kisallatokDataGridView.DataSource = eredmenyek;
+        }
+        else
+        {
+            MessageBox.Show("Nincs találat a megadott névvel.", "Nincs találat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+    }
+    else
+    {
+        MessageBox.Show("Kerlek add meg a keresett kisallat nevet!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+    }
+}
+
+Magyarázat:
+
+    Szűrés név alapján: A FilterKisallatokByNev metódus a megadott név alapján hajt végre egy LIKE keresést, amely részleges egyezést is figyelembe vesz. Azaz, ha a felhasználó csak egy részletet ad meg (pl. macska), akkor minden olyan kisállat, akinek a neve tartalmazza ezt a szót, szerepelni fog az eredményben.
+
+    A DataGridView frissítése: Ha találunk megfelelő kisállatokat, akkor a szűrési eredményeket egy DataGridView-be töltjük. A kisallatokDataGridView.DataSource = eredmenyek; sor felelős azért, hogy az adatokat megjelenítse a táblázatban.
+
+    Eredmény megjelenítése: Ha a szűrés nem talál semmit, egy figyelmeztető üzenet jelenik meg. Ha találatok vannak, akkor azok a DataGridView-ben jelennek meg.
+
+A DataGridView beállítása:
+
+A kód a kisallatokDataGridView nevű DataGridView-t használja. Ha még nincs, akkor a formon hozzá kell adni egy DataGridView-t a nevével (kisallatokDataGridView), hogy az adatok megjelenjenek benne.
+Megjelenítés előtt:
+
+Mielőtt a DataGridView-ben megjelenítenéd az adatokat, győződj meg arról, hogy megfelelően formázod őket. Ha a Kisallat osztály több mezőt tartalmaz, akkor a megjelenített oszlopokat is hozzá kell adni a DataGridView-hez.
+Összegzés:
+
+Ez a kód lehetővé teszi, hogy a felhasználó név alapján szűrjön a kisállatok között, és az eredményt egy táblázatban jelenítse meg.
+Ezt mondtad:
+es ha kategoriara akarok szurni akkor hasonlo?
+A ChatGPT ezt mondta:
+ChatGPT
+
+Igen, ha kategóriára szeretnél szűrni, akkor hasonló módon működik, mint a név szerinti szűrés. Az egyetlen különbség, hogy most a Kategoria mezőre fogunk szűrni. Az alábbiakban bemutatom, hogyan módosítható a kód, hogy a kategóriákra történjen szűrés.
+1. Szűrő metódus kategóriákra a controller osztályban:
+
+A FilterKategoriaByNev metódus hasonlóan működik, mint a név szerinti szűrés, csak most a Kategoria mezőre keresünk.
+
+public List<Kategoria> FilterKategoriaByNev(string kategoriaNev)
+{
+    using SQLiteConnection connection = new SQLiteConnection(CONN_STRING);
+    connection.Open();
+
+    string query = @"SELECT * FROM Kategoriak WHERE Nev LIKE @Nev";
+    using SQLiteCommand command = new SQLiteCommand(query, connection);
+    command.Parameters.AddWithValue("@Nev", "%" + kategoriaNev + "%"); // Részleges keresés
+
+    List<Kategoria> kategoriak = new List<Kategoria>();
+    using (SQLiteDataReader reader = command.ExecuteReader())
+    {
+        while (reader.Read())
+        {
+            Kategoria kategoria = new Kategoria
+            {
+                ID = reader.GetInt64(reader.GetOrdinal("ID")),
+                Nev = reader.GetString(reader.GetOrdinal("Nev")),
+                // Egyéb mezők, ha vannak
+            };
+            kategoriak.Add(kategoria);
+        }
+    }
+    return kategoriak;
+}
+
+2. A szűrés gomb esemény kezelése:
+
+A torlesButton_Click helyett most létrehozunk egy szuresKategoriaButton_Click eseményt, amely a kategóriák szűrését végzi el.
+
+private void szuresKategoriaButton_Click(object sender, EventArgs e)
+{
+    string kategoriaNev = kategoriaNevTextBox.Text;
+
+    if (!string.IsNullOrWhiteSpace(kategoriaNev))
+    {
+        // A szűrési eredmények listája
+        List<Kategoria> eredmenyek = controller.FilterKategoriaByNev(kategoriaNev);
+
+        if (eredmenyek.Count > 0)
+        {
+            // Az eredményeket betöltjük a DataGridView-be
+            kategoriakDataGridView.DataSource = eredmenyek;
+        }
+        else
+        {
+            MessageBox.Show("Nincs talalat a megadott kategoriaval.", "Nincs talalat", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+    }
+    else
+    {
+        MessageBox.Show("Kerlek add meg a keresett kategoria nevet!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+    }
+}
+
+3. A DataGridView frissítése:
+
+A DataGridView-t, amely most a kategóriák eredményét jeleníti meg, ugyanúgy kell frissíteni, mint a név szűrésénél.
+A következő lépéseket követheted:
+
+    Szűrni szeretnél egy adott kategória név alapján.
+    A szűrési eredményeket a DataGridView-ben jeleníted meg.
+    Ha nincs találat, egy üzenetet jelenítesz meg a felhasználónak.
+
+Kategória táblázat megjelenítése:
+
+Ha a Kategoria osztály tartalmaz több mezőt is, győződj meg róla, hogy a DataGridView-ben megfelelő oszlopok vannak az adatok megjelenítésére.
+Összegzés:
+
+    Az alapvető logika nem változik: a LIKE szűrés segítségével részleges keresést hajtasz végre a megadott név alapján.
+    A DataGridView a találatokat jeleníti meg.
+    Az eljárás hasonlóan működik a kategóriák esetén, mint a kisállatok neve esetén.
+
+Így a kategóriák szűrése is egyszerűen megoldható az előzőhöz hasonló módon!
